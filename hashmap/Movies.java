@@ -24,7 +24,13 @@ public class Movies {
     library.put("Comedy", comedy);
 
     library.get("Comedy").add("Tag");
-    
+
+    library.get("Comedy").remove(1);
+
+    // library.remove("comedy");
+
+    library.get("Comedy").set(0, "Man");
+
     for (String subject : library.keySet()){
         System.out.println("Categories: " + subject  );
     
